@@ -21,7 +21,6 @@ export default function CategoryScreen() {
       const response = await fetch(
         "https://fakestoreapi.com/products/categories",
       );
-
       const data = await response.json();
       setCategories(data);
     } catch (error) {
